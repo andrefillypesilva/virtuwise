@@ -7,3 +7,6 @@ dist-ssr
 
 # Folders
 .vscode
+
+# Files
+package-lock.json
