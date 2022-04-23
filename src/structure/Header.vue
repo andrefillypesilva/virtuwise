@@ -51,13 +51,10 @@ export default {
 
 <style lang="scss">
 @import '../assets/style/_variables.scss';
+@import '../assets/style/_mixins.scss';
 
 .header {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: $light-color;
+  @include flex-container;
 
   &__logo {
     width: 16rem;
@@ -68,18 +65,10 @@ export default {
     padding: 1rem;
 
     &--item {
-      list-style: none;
-      display: inline;
-      padding: 0 1rem;
+      @include menu-item;
       
       a {
-        color: $dark-color;
-        text-decoration: none;
-        transition: color .2s;
-
-        &:hover, &:active {
-          color: $secondary-color;
-        }
+        @include default-anchor;
       }
     }
   }
@@ -89,6 +78,7 @@ export default {
     background-color: $primary-color;
     color: $light-color;
     text-align: center;
+    border-bottom: $default-border;
 
     &--message {
       margin: 1rem;
