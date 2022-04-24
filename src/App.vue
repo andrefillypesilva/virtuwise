@@ -6,16 +6,20 @@
   <Main msg="VirtuWise" />
 </template>
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-  }
+<style lang="scss">
+@import './assets/style/_variables.scss';
+@import './assets/style/_mixins.scss';
 
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f2f8fc;
-  }
+*, *::after, *::before {
+    @include reset;
+}
+
+html {
+    @include config-font-sizing;
+}
+
+
+body {
+    @include config-initial-body;
+}
 </style>

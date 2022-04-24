@@ -1,7 +1,13 @@
 const fs = require('fs');
 
+// provided arguments
 const componentType = process.argv['2'];
-const componentName = process.argv['3'];
+let componentName = process.argv['3'];
+
+if (componentName) {
+    // it converts snake-case to camelCase
+    componentName = componentName.toLowerCase().replace(/([-_])([a-z])/g, (_match, _p1, p2) => p2.toUpperCase());
+}
 
 if (componentType && componentName) {
 const componentTemplate = `<template>
