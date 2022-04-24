@@ -15,7 +15,7 @@ export default {
 .button {
     background-color: $primary-color;
     color: $light-color;
-    padding: .5rem 1rem;
+    padding: 1.2rem 1.8rem;
     border-radius: 3rem;
 
     &:hover, &:active {

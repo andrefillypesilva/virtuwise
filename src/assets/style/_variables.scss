@@ -1,6 +1,10 @@
+// colours
 $primary-color: #FF7F50;
 $secondary-color: #FF5F1F;
 $light-color: #fff;
 $dark-color: #678898;
-$neutral-color: #e1edf2;
-$default-border: 1px solid $neutral-color;
+$neutral-primary-color: #f2f8fc;
+$neutral-secondary-color: #e1edf2;
+
+// borders
+$default-border: 1px solid $neutral-secondary-color;

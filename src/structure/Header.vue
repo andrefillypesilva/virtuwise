@@ -16,7 +16,7 @@
     </ul>
     <div class="header__slogan">
       <h4 class="header__slogan--message">
-        Your 360º virtual stand to shop wisely on the internet
+        Your 360º virtual stand to sell wisely on the internet
       </h4>
     </div>
   </section>
@@ -57,12 +57,30 @@ export default {
   @include flex-container;
 
   &__logo {
-    width: 16rem;
-    padding: 1rem;
+    width: 20rem;
+    padding: 1.4rem;
+
+    @include respond(tab-land) {
+        width: 24rem;
+    }
+
+    @include respond(phone) {
+        width: 50%;
+        margin: 0 auto;
+    }
   }
 
   &__menu {
-    padding: 1rem;
+    padding: 1.4rem;
+    font-size: 1.2rem;
+
+    @include respond(tab-land) {
+        font-size: 1.6rem;
+    }
+
+    @include respond(phone) {
+        display: none
+    }
 
     &--item {
       @include menu-item;
@@ -79,9 +97,18 @@ export default {
     color: $light-color;
     text-align: center;
     border-bottom: $default-border;
+    font-size: 1.2rem;
 
     &--message {
-      margin: 1rem;
+      margin: 1.4rem;
+    }
+
+    @include respond(tab-land) {
+        font-size: 1.6rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2rem;
     }
   }
 }
