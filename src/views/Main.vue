@@ -17,35 +17,43 @@
         vehicles: [{
           title: 'Renault Captur 0.9 TCE Exclusive',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT']
+          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         }, {
           title: 'Nissan Micra 1.0 G Acenta',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino']
+          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         }, {
           title: 'Renault Captur 0.9 TCE Exclusive',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT']
+          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         }, {
           title: 'Nissan Micra 1.0 G Acenta',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino']
+          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         },{
           title: 'Renault Captur 0.9 TCE Exclusive',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT']
+          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         }, {
           title: 'Nissan Micra 1.0 G Acenta',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino']
+          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         }, {
           title: 'Renault Captur 0.9 TCE Exclusive',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT']
+          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         }, {
           title: 'Nissan Micra 1.0 G Acenta',
           image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino']
+          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
+          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
         }]
       }
     }
@@ -60,6 +68,7 @@
           :title="vehicle.title"
           :image="vehicle.image"
           :options="vehicle.options"
+          :location="vehicle.location"
         />
       </div>
     </section>

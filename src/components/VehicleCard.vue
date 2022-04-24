@@ -8,7 +8,7 @@
                     <li v-for="option in options" :key="option">{{ option }}</li>
                 </ul>
                 <h6>
-                    <span class="material-symbols-outlined">my_location</span> SSCAR Automóveis, Vila Nova de Famalicão
+                    <span class="material-symbols-outlined">my_location</span> {{ location }}
                 </h6>
             </figcaption>
         </figure>
@@ -21,6 +21,7 @@
             title: String,
             image: String,
             options: [],
+            location: String,
         },
         mounted () {
 
