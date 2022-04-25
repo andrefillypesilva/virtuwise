@@ -8,7 +8,12 @@
     "new": "node ./scripts/create-component.js"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "aframe": "^1.2.0",
+    "aframe-event-set-component": "^5.0.0",
+    "aframe-look-at-component": "^1.0.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",

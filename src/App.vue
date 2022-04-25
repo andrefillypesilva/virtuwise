@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <Main msg="VirtuWise" />
+  <router-view></router-view>
 </template>
 
 <style lang="scss">

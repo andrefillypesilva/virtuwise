@@ -1,14 +1,14 @@
 <template>
-    <section class="vehicle-card">
+    <section class="vehicle-card" @click="call360Viewer(vehicle)">
         <figure class="vehicle-card__figure">
-            <img :src="image" :alt="title">
+            <img :src="vehicle.image" :alt="vehicle.title">
             <figcaption class="vehicle-card__figure--caption">
-                <h4>{{ title }}</h4>
+                <h4>{{ vehicle.title }}</h4>
                 <ul>
-                    <li v-for="option in options" :key="option">{{ option }}</li>
+                    <li v-for="option in vehicle.options" :key="option">{{ option }}</li>
                 </ul>
                 <h6>
-                    <span class="material-symbols-outlined">my_location</span> {{ location }}
+                    <span class="material-symbols-outlined">my_location</span> {{ vehicle.location.placeName }}, {{ vehicle.location.address }}
                 </h6>
             </figcaption>
         </figure>
@@ -16,12 +16,11 @@
 </template>
 
 <script lang="ts">
+import Vehicle from '../models/Vehicle';
+    import StoreService from '../services/StoreService';
     export default {
         props: {
-            title: String,
-            image: String,
-            options: [],
-            location: String,
+            vehicle: Object,
         },
         mounted () {
 
@@ -32,7 +31,10 @@
             }
         },
         methods: {
-
+            call360Viewer(vehicle: Vehicle): void {
+                StoreService.setVehicle(vehicle);
+                this.$router.push('/360viewer');
+            }
         },
         computed: {
 
@@ -52,6 +54,8 @@
 
     &__figure {
         filter: grayscale(50%);
+        transition: all .2s;
+        
         img {
             width: 100%;
         }
@@ -127,7 +131,8 @@
 
     &:hover > &__figure {
         filter: grayscale(0);
-            
+        cursor: pointer;
+        
         h4 {
             color: $secondary-color;
         }

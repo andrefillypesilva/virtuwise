@@ -15,45 +15,125 @@
     data() {
       return {
         vehicles: [{
-          title: 'Renault Captur 0.9 TCE Exclusive',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
+          title: 'Mercedes-AMG EQS 53 4MATIC+',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/eqs/saloon-v297/explore/design-highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ6.8.20210806155321.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt//content/dam/hq/passengercars/cars/eqs/saloon-v297/explore/design-teaser/04-2021/images/mercedes-eq-eqs-v297-highlights-hotspot-start-interior-5600x2800-04-2021.jpg',
+          options: ['2022', '0 km', 'Elétrico', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Sintra',
+          }
         }, {
-          title: 'Nissan Micra 1.0 G Acenta',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
+          title: 'Mercedes-Benz S Class Limousine',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/comfort/driving-comfort/_jcr_content/par/videoimageslider/slides/videoimageslide/image.MQ6.12.2x.20200909155349.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/saloon-wv223/comfort/highlights/08-2020/images/mercedes-benz-s-class-wv223-comfort-mbux-hotspot-start-5600x2800-08-2020.jpg',
+          options: ['2019', '13 785 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'StarSul',
+            address: 'Portimão',
+          }
         }, {
-          title: 'Renault Captur 0.9 TCE Exclusive',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
+          title: 'Mercedes-Maybach S Class',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_828561571/image.MQ6.6.2x.20210518114535.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/mercedes-maybach-z223/comfort/highlights-mbux/10-2020/images/mercedes-maybach-s-class-z223-comfort-mbux-hotspot-360-5600x2800-10-2020.jpg',
+          options: ['2022', '0 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Lisboa',
+          }
         }, {
-          title: 'Nissan Micra 1.0 G Acenta',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
-        },{
-          title: 'Renault Captur 0.9 TCE Exclusive',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
+          title: 'Mercedes-AMG EQS 53 4MATIC+',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/eqs/saloon-v297/explore/design-highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ6.8.20210806155321.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt//content/dam/hq/passengercars/cars/eqs/saloon-v297/explore/design-teaser/04-2021/images/mercedes-eq-eqs-v297-highlights-hotspot-start-interior-5600x2800-04-2021.jpg',
+          options: ['2022', '0 km', 'Elétrico', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Sintra',
+          }
         }, {
-          title: 'Nissan Micra 1.0 G Acenta',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
+          title: 'Mercedes-Benz S Class Limousine',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/comfort/driving-comfort/_jcr_content/par/videoimageslider/slides/videoimageslide/image.MQ6.12.2x.20200909155349.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/saloon-wv223/comfort/highlights/08-2020/images/mercedes-benz-s-class-wv223-comfort-mbux-hotspot-start-5600x2800-08-2020.jpg',
+          options: ['2019', '13 785 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'StarSul',
+            address: 'Portimão',
+          }
         }, {
-          title: 'Renault Captur 0.9 TCE Exclusive',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnbjhuODhkbXF3YTMtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.GD9jldFIKpapKi7wYEaAKQOcHRzgkIYkUdGiiF3dap0/image;s=1080x720',
-          options: ['2014', '72 819 km', 'Gasolina', 'SUV / TT'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
+          title: 'Mercedes-Maybach S Class',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_828561571/image.MQ6.6.2x.20210518114535.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/mercedes-maybach-z223/comfort/highlights-mbux/10-2020/images/mercedes-maybach-s-class-z223-comfort-mbux-hotspot-360-5600x2800-10-2020.jpg',
+          options: ['2022', '0 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Lisboa',
+          }
         }, {
-          title: 'Nissan Micra 1.0 G Acenta',
-          image: 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQyeHJwam1zNm95eS1TVERWVExQVCIsInciOlt7ImZuIjoiNm1nandscDdrZ2RiMi1TVERWVExQVCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LZoqrQSISq_AhrrPXbN0owCp_ASV7pKgIZnIduqHm1k/image;s=1080x720',
-          options: ['2018', '75 125 km', 'Gasolina', 'Citadino'],
-          location: 'SSCAR Automóveis, Vila Nova de Famalicão',
+          title: 'Mercedes-AMG EQS 53 4MATIC+',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/eqs/saloon-v297/explore/design-highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ6.8.20210806155321.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt//content/dam/hq/passengercars/cars/eqs/saloon-v297/explore/design-teaser/04-2021/images/mercedes-eq-eqs-v297-highlights-hotspot-start-interior-5600x2800-04-2021.jpg',
+          options: ['2022', '0 km', 'Elétrico', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Sintra',
+          }
+        }, {
+          title: 'Mercedes-Benz S Class Limousine',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/comfort/driving-comfort/_jcr_content/par/videoimageslider/slides/videoimageslide/image.MQ6.12.2x.20200909155349.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/saloon-wv223/comfort/highlights/08-2020/images/mercedes-benz-s-class-wv223-comfort-mbux-hotspot-start-5600x2800-08-2020.jpg',
+          options: ['2019', '13 785 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'StarSul',
+            address: 'Portimão',
+          }
+        }, {
+          title: 'Mercedes-Maybach S Class',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_828561571/image.MQ6.6.2x.20210518114535.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/mercedes-maybach-z223/comfort/highlights-mbux/10-2020/images/mercedes-maybach-s-class-z223-comfort-mbux-hotspot-360-5600x2800-10-2020.jpg',
+          options: ['2022', '0 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Lisboa',
+          }
+        }, {
+          title: 'Mercedes-AMG EQS 53 4MATIC+',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/eqs/saloon-v297/explore/design-highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ6.8.20210806155321.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt//content/dam/hq/passengercars/cars/eqs/saloon-v297/explore/design-teaser/04-2021/images/mercedes-eq-eqs-v297-highlights-hotspot-start-interior-5600x2800-04-2021.jpg',
+          options: ['2022', '0 km', 'Elétrico', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Sintra',
+          }
+        }, {
+          title: 'Mercedes-Benz S Class Limousine',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/comfort/driving-comfort/_jcr_content/par/videoimageslider/slides/videoimageslide/image.MQ6.12.2x.20200909155349.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/saloon-wv223/comfort/highlights/08-2020/images/mercedes-benz-s-class-wv223-comfort-mbux-hotspot-start-5600x2800-08-2020.jpg',
+          options: ['2019', '13 785 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'StarSul',
+            address: 'Portimão',
+          }
+        }, {
+          title: 'Mercedes-Maybach S Class',
+          brand: 'Mercedes-Benz',
+          image: 'https://www.mercedes-benz.pt/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_828561571/image.MQ6.6.2x.20210518114535.jpeg',
+          panoramicImage: 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/mercedes-maybach-z223/comfort/highlights-mbux/10-2020/images/mercedes-maybach-s-class-z223-comfort-mbux-hotspot-360-5600x2800-10-2020.jpg',
+          options: ['2022', '0 km', 'Gasolina', 'Sedan'],
+          location: {
+            placeName: 'Mercedes-Benz',
+            address: 'Lisboa',
+          }
         }]
       }
     }
@@ -65,10 +145,7 @@
     <section class="main">
       <div class="main__item" v-for="vehicle in vehicles" :key="vehicle.title">
         <VehicleCard
-          :title="vehicle.title"
-          :image="vehicle.image"
-          :options="vehicle.options"
-          :location="vehicle.location"
+          :vehicle="vehicle"
         />
       </div>
     </section>
