@@ -8,6 +8,7 @@
     "new": "node ./scripts/create-component.js"
   },
   "dependencies": {
+    "@types/aframe": "^1.2.0",
     "aframe": "^1.2.0",
     "aframe-event-set-component": "^5.0.0",
     "aframe-look-at-component": "^1.0.0",

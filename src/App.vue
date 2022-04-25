@@ -1,9 +1,23 @@
-<script setup lang="ts">
-  import Main from './views/Main.vue'
+<script lang="ts">
+  import Header from '@/structure/Header.vue';
+  import Footer from '@/structure/Footer.vue';
+  import AFrameService from "./services/AFrameService";
+
+  export default {
+    components: {
+      Header,
+      Footer,
+    },
+    mounted() {
+      AFrameService.registerComponents();
+    }
+  }
 </script>
 
 <template>
+  <Header v-if="!$route.meta.hideOn360Mode" />
   <router-view></router-view>
+  <Footer v-if="!$route.meta.hideOn360Mode" />
 </template>
 
 <style lang="scss">
