@@ -74,10 +74,11 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 import StoreService from "../services/StoreService";
 import Button from '../components/Button.vue';
 
-export default {
+export default defineComponent({
   components: { Button },
   props: [],
   mounted() {
@@ -90,14 +91,14 @@ export default {
   },
   methods: {},
   computed: {
-    carDetails() {
+    carDetails(): string[] {
       return [
         `value: Year and usage: ${this.vehicle.options[0]} / ${this.vehicle.options[1]}; position: -3.65 3.2 -2`,
         `value: Fuel type: ${this.vehicle.options[2]}; position: -3.65 2.9 -2`,
         `value: Category: ${this.vehicle.options[3]}; position: -3.65 2.6 -2`,
       ];
     },
-    cabinDetails() {
+    cabinDetails(): string[] {
       return [
         `value: Year and usage: ${this.vehicle.options[0]} / ${this.vehicle.options[1]}; position: 3 2.3 -2; align: right`,
         `value: Fuel type: ${this.vehicle.options[2]}; position: 3 2 -2; align: right`,
@@ -105,7 +106,7 @@ export default {
       ];
     },
   },
-};
+});
 </script>
 
 <style lang="scss">

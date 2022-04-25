@@ -1,11 +1,11 @@
 export default interface Vehicle {
-    title: String;
-    brand: String;
-    image: String;
-    panoramicImage: String;
+    title: string;
+    brand: string;
+    image: string;
+    panoramicImage: string;
     location: {
-        placeName: String;
-        address: String;
+        placeName: string;
+        address: string;
     },
-    options: String[];
+    options: string[];
 }

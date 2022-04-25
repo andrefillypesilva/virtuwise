@@ -16,11 +16,15 @@
 </template>
 
 <script lang="ts">
-import Vehicle from '../models/Vehicle';
+    import { defineComponent } from 'vue';
+    import Vehicle from '../models/Vehicle';
     import StoreService from '../services/StoreService';
-    export default {
+    export default defineComponent({
         props: {
-            vehicle: Object,
+            vehicle: {
+                type: Object as () => Vehicle,
+                default: {},
+            },
         },
         mounted () {
 
@@ -39,7 +43,7 @@ import Vehicle from '../models/Vehicle';
         computed: {
 
         }
-    }
+    });
 </script>
 
 <style scoped lang="scss">
