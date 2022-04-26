@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build --mode production",
     "preview": "vite preview",
     "new": "node ./scripts/create-component.js",
-    "deploy": "npm run build && gh-pages -d dist"
+    "copyVehiclesFolder": "cp -R src/assets/images/vehicles dist/assets",
+    "deploy": "npm run build && npm run copyVehiclesFolder && gh-pages -d dist"
   },
   "dependencies": {
     "@types/aframe": "^1.2.0",
