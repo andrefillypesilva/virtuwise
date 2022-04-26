@@ -3,7 +3,7 @@
     <Button title="Go back to the catalog view" :isBackButton="true" />
     <a-scene embedded>
       <a-assets>
-        <img id="background" :src="vehicle.panoramicImage" />
+        <img id="background" crossorigin="anonymous" :src="vehicle.panoramicImage" />
       </a-assets>
 
       <a-camera id="camera" position="0 1.6 0">
@@ -118,7 +118,7 @@ export default defineComponent({
 
   a-scene {
     grid-column: 1 / -1;
-    height: 50rem;
+    height: 80vh;
     border-radius: 1rem;
     overflow: hidden;
     border: 1px solid $neutral-primary-color;
