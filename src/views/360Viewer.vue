@@ -76,13 +76,17 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import StoreService from "../services/StoreService";
+import AFrameService from "../services/AFrameService";
 import Button from '../components/Button.vue';
 
 export default defineComponent({
   components: { Button },
   props: [],
   mounted() {
-    
+    AFrameService.registerComponents();
+  },
+  unmounted() {
+    AFrameService.destroyComponents();
   },
   data() {
     return {

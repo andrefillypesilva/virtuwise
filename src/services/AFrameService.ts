@@ -172,4 +172,11 @@ export default class AFrameService {
       },
     });
   }
+
+  static destroyComponents(): void {
+    delete AFRAME.components['mb-btn-group'];
+    delete AFRAME.components['mb-btn'];
+    delete AFRAME.components['mb-label-group'];
+    delete AFRAME.components['mb-label'];
+  }
 }

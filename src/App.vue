@@ -1,7 +1,6 @@
 <script lang="ts">
   import Header from '@/structure/Header.vue';
   import Footer from '@/structure/Footer.vue';
-  import AFrameService from "./services/AFrameService";
 
   export default {
     components: {
@@ -9,7 +8,7 @@
       Footer,
     },
     mounted() {
-      AFrameService.registerComponents();
+      
     }
   }
 </script>
