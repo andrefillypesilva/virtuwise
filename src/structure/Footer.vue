@@ -2,15 +2,19 @@
   <section class="footer">
     <ul class="footer__links">
       <li class="footer__links--item">
-        <a href="#">
+        <router-link :to="{ path: '/' }">
           <span>Discover</span>
-        </a>
+        </router-link>
       </li>
       <li class="footer__links--item">
-        <a href="#"> How <span>VirtuWise</span> works? </a>
+        <router-link :to="{ path: '/how-it-works' }">
+          How <span>VirtuWise</span> works?
+        </router-link>
       </li>
       <li class="footer__links--item">
-        <a href="#"> Publish my <span>360º project</span> </a>
+        <router-link :to="{ path: '/create-account' }">
+          Publish my <span>360º project</span>
+        </router-link>
       </li>
     </ul>
     <ul class="footer__social">
@@ -100,8 +104,7 @@ export default {
   &__social {
     &--item {
       a {
-        &:hover,
-        &:active {
+        &:hover {
           color: $dark-color;
         }
 
@@ -112,8 +115,7 @@ export default {
             filter: invert(100%) sepia(9%) saturate(7500%) hue-rotate(238deg) brightness(113%) contrast(108%);
           }
 
-          &:hover,
-          &:active {
+          &:hover {
             color: $light-color;
           }
         }

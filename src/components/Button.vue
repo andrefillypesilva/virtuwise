@@ -1,14 +1,27 @@
 <template>
-  <a href="#" class="button">
-    <span class="material-symbols-outlined" v-if="isBackButton">
-      arrow_back </span
-    >{{ title }}
-  </a>
+  <router-link :to="to" class="button" v-if="to">
+    <span class="material-symbols-outlined button__icon"
+      v-if="icon">
+      {{ icon }}
+    </span>
+    {{ title }}
+  </router-link>
 </template>
 
 <script lang="ts">
 export default {
-  props: ["title", "isBackButton"],
+  props:{
+    title: {
+      type: String,
+    },
+    icon: {
+      type: String,
+    },
+    to: {
+      type: String,
+      default: '/',
+    }
+  },
 };
 </script>
 
@@ -28,8 +41,10 @@ export default {
   transition: background-color 0.5s;
   font-size: 1.2rem;
 
-  span {
+  &__icon {
     margin-right: 0.5rem;
+    color: $light-color;
+    position: initial;
   }
 
   &:hover,

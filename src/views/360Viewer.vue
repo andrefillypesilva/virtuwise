@@ -1,6 +1,6 @@
 <template>
   <section class="viewer">
-    <Button title="Go back to the catalog view" :isBackButton="true" />
+    <Button title="Go back to the catalog view" icon="arrow_back" />
     <a-scene embedded>
       <a-assets>
         <img id="background" crossorigin="anonymous" :src="vehicle.panoramicImage" />

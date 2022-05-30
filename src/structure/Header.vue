@@ -1,17 +1,19 @@
 <template>
   <section class="header">
     <div class="header__logo">
-      <Logo />
+      <router-link :to="{ path: '/' }">
+        <Logo />
+      </router-link>
     </div>
     <ul class="header__menu">
+      <router-link tag="li" :to="{ path: '/' }" class="header__menu--item">
+        Discover
+      </router-link>
+      <router-link tag="li" :to="{ path: '/how-it-works' }" class="header__menu--item">
+        How VirtuWise works?
+      </router-link>
       <li class="header__menu--item">
-        <a href="#">Discover</a>
-      </li>
-      <li class="header__menu--item">
-        <a href="#">How VirtuWise works?</a>
-      </li>
-      <li class="header__menu--item">
-        <Button title="Publish my 360º project" />
+        <Button title="Publish my 360º project" to="/create-account" />
       </li>
     </ul>
     <div class="header__slogan">
@@ -84,10 +86,7 @@ export default {
 
     &--item {
       @include menu-item;
-      
-      a {
-        @include default-anchor;
-      }
+      @include default-anchor;
     }
   }
 

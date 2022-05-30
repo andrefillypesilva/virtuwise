@@ -21,8 +21,8 @@
     text-decoration: none;
     transition: color .2s;
 
-    &:hover, &:active {
-        color: $secondary-color;
+    &:hover, &:active, &.active {
+        color: $primary-color;
     }
 
     span {
@@ -98,6 +98,11 @@
     grid-gap: 3.5rem;
     grid-template-columns: repeat(4, 1fr);
 
+    :first-child {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
     @include respond(tab-land) {
         width: calc(100% - 5rem);
         grid-gap: 2rem;
@@ -114,5 +119,134 @@
         width: calc(100% - 6rem);
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem;
+
+        :first-child {
+            grid-column: auto;
+        }
+    }
+}
+
+@mixin default-input {
+    border: $inputs-border;
+    padding: 1rem 3.5rem;
+    border-radius: .5rem;
+    width: calc(100% - 7rem);
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+@mixin form-container {
+    width: 96rem;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    text-align: center;
+
+    &__title {
+        @include typography-title;
+    }
+
+    &__description {
+        @include typography-description;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4rem;
+        width: 60rem;
+        margin: 0 auto;
+
+        &--button {
+            max-width: 100% !important;
+            justify-content: center;
+        }
+
+        &--item {
+            @include form-item;
+        }
+
+        input {
+            padding: 1.8rem 3.5rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        width: calc(100% - 6rem);
+
+        &__form {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @include respond(phone) {
+        &__form {
+            > * {
+                padding: 2rem 3.5rem;
+            }
+
+            &--button {
+                font-size: 2.5rem !important;
+                padding: 2rem !important;
+            }
+        }
+    }
+}
+
+@mixin download-box {
+    outline: 2px dashed $neutral-secondary-color;
+    outline-offset: -10px;
+    padding: 3rem;
+}
+
+@mixin form-item {
+    @include default-input;
+    position: relative;
+    padding: 1rem 0;
+    flex-basis: 100%;
+    border-bottom: $shadow-border;
+    border-radius: 3rem;
+
+    span {
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        color: $secondary-color;
+    }
+
+    .arrow-down {
+        right: 2rem;
+    }
+
+    select {
+        @include default-input;
+        background-color: transparent;
+        border: none;
+        padding: 1rem 0 1rem 4.5rem;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+// TYPOGRAPHY
+@mixin typography-title {
+    font-size: 3rem;
+    font-weight: 900;
+
+    @include respond(phone) {
+        font-size: 4rem;
+    }
+}
+
+@mixin typography-description {
+    font-weight: 400;
+
+    @include respond(phone) {
+        font-size: 2.5rem;
     }
 }
